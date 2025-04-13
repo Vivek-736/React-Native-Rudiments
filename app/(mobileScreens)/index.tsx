@@ -17,10 +17,12 @@ export default function Index() {
       >
         <Image source={icons.logo} className="w-12 h-10 mt-16 mb-5 mx-auto" />
         <View className="flex-1 mt-5">
-          <SearchBar 
-            onPress={() => router.push("/search")}
-            placeholder="Search for a movie"
-          />
+          <View className="border border-[#ab8bff] rounded-full">
+            <SearchBar
+              onPress={() => router.push("/search")}
+              placeholder="Search for a movie"
+            />
+          </View>
         </View>
       </ScrollView>
     </View>
